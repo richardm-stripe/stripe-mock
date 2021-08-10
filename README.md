@@ -38,20 +38,6 @@ Limitations:
   is currently not supported. It will return a success response instead of
   the desired error response.
 
-## Future plans
-
-The next important feature that we're aiming to provide is statefulness. The
-idea would be that resources created during a session would be stored for that
-session's duration and could be subsequently retrieved, updated, and deleted.
-This would allow more comprehensive integration tests to run successfully
-against stripe-mock.
-
-We'll continue to aim to improve the quality of stripe-mock's responses, but it
-will never be on perfect parity with the live API. We think the ideal test
-suite for an integration would involve running most of the suite against
-stripe-mock, and then to have a few smoke tests run critical flows against the
-more accurate (but also slower) Stripe API in test mode.
-
 ## Usage
 
 If you have Go installed, you can install the basic binary with:
